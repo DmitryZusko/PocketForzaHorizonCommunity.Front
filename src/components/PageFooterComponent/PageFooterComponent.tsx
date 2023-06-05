@@ -14,16 +14,29 @@ const PageFooterComponent = forwardRef<HTMLDivElement>(function PageFooterCompon
         This application is created just for own use.
       </Typography>
       <Typography align="center" variant="body1">
-        Created by Dmitry Zusko.{" "}
+        Created by{" "}
+        <a href={"https://www.linkedin.com/in/dmitry-zusko-809ba7279/"} target={"_blank"}>
+          Dmitry Zusko
+        </a>
       </Typography>
-      <CustomLinkComponent
-        href={"https://github.com/DmitryZusko/PocketForzaHorizonCommunity"}
-        target={"_blank"}
-      >
-        <Typography align="center" variant="body1">
-          Git Hub
-        </Typography>
-      </CustomLinkComponent>
+      <Box display={"flex"} width="100%" justifyContent="space-evenly">
+        <CustomLinkComponent
+          href={"https://github.com/DmitryZusko/PocketForzaHorizonCommunity"}
+          target={"_blank"}
+        >
+          <Typography align="center" variant="body1">
+            Git Hub - BackEnd
+          </Typography>
+        </CustomLinkComponent>
+        <CustomLinkComponent
+          href={"https://github.com/DmitryZusko/PocketForzaHorizonCommunity.Front"}
+          target={"_blank"}
+        >
+          <Typography align="center" variant="body1">
+            Git Hub - FrontEnd
+          </Typography>
+        </CustomLinkComponent>
+      </Box>
     </Box>
   );
 });

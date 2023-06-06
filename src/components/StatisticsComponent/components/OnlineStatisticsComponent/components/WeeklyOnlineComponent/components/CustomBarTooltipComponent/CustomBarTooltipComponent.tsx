@@ -5,9 +5,9 @@ const CustomBarTooltipComponent = ({ active, payload, label }: any) => {
   if (active && payload && payload.length) {
     return (
       <Box sx={styles.outerBox}>
-        <Typography variant="smallText">
+        <Typography variant="smallText" color={"black"}>
           {payload[0].payload.date}:{" "}
-          <Typography component="span" variant="smallBoldText">
+          <Typography component="span" variant="smallBoldText" color={"black"}>
             {payload[0].payload.onlineCount}
           </Typography>{" "}
           players

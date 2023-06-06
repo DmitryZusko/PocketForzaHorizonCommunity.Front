@@ -9,9 +9,9 @@ const CustomPieTooltipComponent = ({ active, payload, label }: any) => {
       payload[0].name <= 13 ? `${payload[0].name + 1} AM` : `${payload[0].name - 11} PM`;
     return (
       <Box sx={styles.outerBox}>
-        <Typography variant="smallText">
+        <Typography variant="smallText" color={"black"}>
           {labelText}:{" "}
-          <Typography component="span" variant="smallBoldText">
+          <Typography component="span" variant="smallBoldText" color={"black"}>
             {payload[0].value}
           </Typography>{" "}
           players

@@ -67,7 +67,7 @@ export const defaultChartSize: ImageSize = {
   height: 400,
 };
 
-export const maxImageSizeInMB = 3;
+export const maxImageSizeInMB = 5;
 
 //application settings
 export const AccessTokenKey = "@accessToken";

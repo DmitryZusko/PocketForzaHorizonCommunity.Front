@@ -40,8 +40,8 @@ export const useFilterCarTableComponent = () => {
   const dispatch = useAppDispatch();
 
   const loadParameters = useCallback(() => {
-    dispatch(getManufacturesAsync({}));
-    dispatch(getCarTypesAsync({}));
+    dispatch(getManufacturesAsync({ page: 0, pageSize: 0 }));
+    dispatch(getCarTypesAsync({ page: 0, pageSize: 0 }));
     dispatch(getCarFilterSchemeAsync());
   }, [dispatch]);
 
